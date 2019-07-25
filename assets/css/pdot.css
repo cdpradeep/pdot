@@ -1,0 +1,67 @@
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    transition: linear 500ms ease-in 500ms;
+}
+.pd-cover .pd-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pd-cover .pd-inner-cont{
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    animation: fadein 1s;
+    padding-top: 5%;
+}    
+@keyframes fadein {
+    0% { opacity: 0; transform: translateY(20px); }
+    100%   { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width:320px){
+    .pd-cover .pd-inner-cont img{width: 75%;}
+    .lets-go-arrow{width: 15%; height: 20%; margin: 25% auto 0 auto;}
+}
+
+@media (min-width:480px) and (orientation: landscape){
+    .pd-cover .pd-inner-cont img{width: 50%;}
+    .lets-go-arrow{width: 10%; height: 15%; margin: 5% auto 0 auto;}
+}
+
+@media screen and (min-width:768px){
+    .pd-cover .pd-inner-cont img{width: 75%;}
+    .lets-go-arrow{width: 10%; height: 15%; margin: 10% auto 0 auto;}
+}
+.lets-go-arrow{
+    background: url('../img/lets-go-arrow.png') center center no-repeat;
+    background-clip: content-box;
+    background-size: contain;
+    display: block;
+    text-indent: -9999px;
+    animation-name: letsgo;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    line-height: 4em;
+}
+@keyframes letsgo {
+    0%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 0.1;
+    }
+}
+.lets-go-arrow:hover{
+    animation: unset;
+    transition: all 0.4s ease-in 0s;
+}
