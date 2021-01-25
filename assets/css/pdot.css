@@ -560,4 +560,10 @@ a.link:hover{
     .oxygen-modal .role ul, .oxygen-modal .results ul, .oxygen-modal .solution ul {
         flex-direction: column;
     }
+    .oxygen-modal .role ul li, .oxygen-modal .results ul li, .oxygen-modal .solution ul li{
+        width: 100%;
+    }
+    .oxygen-modal .solution ul li{
+        width: 100%;
+    }
 }
