@@ -28,6 +28,7 @@ h1, h2, h3 h4, h5, h6{
     --console: #408ad5;
     --contrast-link-1: #222222;
     --contrast-link-2: #eeeeee;
+    --setu: #00A154;
  }
  .dark {
     --bg-color: #24262d;
@@ -43,6 +44,7 @@ h1, h2, h3 h4, h5, h6{
     --console: #408ad5;
     --contrast-link-1: #222222;
     --contrast-link-2: #eeeeee;
+    --setu: #00A154;
  }
 .pd-cover{
     /* -webkit-animation: fadein 500ms; /* Safari, Chrome and Opera > 12.1 */
@@ -343,6 +345,13 @@ a.link:hover{
 .pd-portfolio .pd-project-item:hover img{
     /* display: block; */
 }
+.pd-portfolio .pd-project-item.setu a{
+    background-image:url('../../assets/img/UI_mockups_Setu.png');    
+    background-color: #560bad ;
+    background-blend-mode: soft-light;
+    color: var(--contrast-link-2);
+    text-align: center;
+}
 .pd-portfolio .pd-project-item.oxygen a{
     background-image:url('../../assets/img/oxygen_mobile_app.png');    
     background-color:  var(--oxygen) ;
@@ -444,6 +453,52 @@ a.link:hover{
     width: 50%;
 }
 .oxygen-modal .role i, .oxygen-modal .results i{
+    font-size: 3rem;
+    /* text-align: center; */
+    color: var(--color-accent);
+}
+
+.setu-modal{
+    color: var(--contrast-link-1);
+}
+.se-head{
+    background-color:var(--setu);
+    color: var(--contrast-link-2);
+}
+.setu-modal img{
+    width: 80%;
+}
+
+.setu-modal .modal-header{
+    background-color: var(--setu);
+}
+.setu-modal .hero{
+    background: url('../../assets/img/aarogya_setu.png') top center no-repeat;
+    background-size: cover;
+    background-color: var(--setu);
+    min-height: 55rem;
+    /* display: flex;
+    justify-content: stretch; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.setu-modal .role ul, .setu-modal .results ul, .setu-modal .solution ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: stretch;
+    padding: 0;
+}
+.setu-modal .role ul li, .setu-modal .results ul li, .setu-modal .solution ul li{
+    width: 25%;
+    background-color: #eee;
+    /* margin: 2rem; */
+    padding: 2rem;
+}
+.setu-modal .solution ul li{
+    width: 50%;
+}
+.setu-modal .role i, .oxygen-modal .results i{
     font-size: 3rem;
     /* text-align: center; */
     color: var(--color-accent);
