@@ -376,6 +376,19 @@ a.link:hover{
     background-blend-mode: multiply;
     color: var(--contrast-link-2);
 }
+.pd-portfolio .pd-project-item.socially a{
+    background-image:url('../../assets/img/socially.png');
+    background-color:  var(--console) ;
+    background-blend-mode: multiply;
+    color: var(--contrast-link-2);
+    background-position: center;
+}
+.pd-portfolio .pd-project-item.luma a{
+    background-image:url('../../assets/img/luma.png');
+    background-color:  var(--console) ;
+    background-blend-mode: multiply;
+    color: var(--contrast-link-2);
+}
 .oxygen-modal{
     color: var(--contrast-link-1);
 }
