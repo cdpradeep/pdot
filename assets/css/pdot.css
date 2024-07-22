@@ -138,12 +138,6 @@ h1, h2, h3 h4, h5, h6{
 .pd-cover.light #toggles .dark-icon:nth-child(1){
     display: none;
 }
-.pd-cover.dark #toggles .dark-icon{
-    /* text-align: left !important; */
-    /* padding-left: 5px; */
-    /* color: #e7e8e9; */
-    /* display: none; */
-}
 /* Theme Switch Toggle - End*/
 
 .pd-cover a.btn {
@@ -339,12 +333,7 @@ a.link:hover{
     font-weight: 100;
     color: var(--contrast-link-1);
 }
-.pd-portfolio .pd-project-item img{
-    /* display: none; */
-}
-.pd-portfolio .pd-project-item:hover img{
-    /* display: block; */
-}
+
 .pd-portfolio .pd-project-item.setu a{
     background-image:url('../../assets/img/UI_mockups_Setu.png');    
     background-color: #560bad ;
@@ -572,16 +561,9 @@ a.link:hover{
         /* border-radius: 0px 0px 10px 10px;  */
         border-bottom: 1px solid var(--border-color);
     }
-    .pd-cover.light .navbar{
-        /* background: #bfbfbf; */
-        /* border-radius: 0px 0px 10px 10px;  */
-    }
     .navbar{
         padding: 1rem 0.1rem;
         border-bottom: 1px solid var(--border-color);
-    }
-    .pd-logo{
-        /* padding-left: 1rem; */
     }
     .navbar .name p{
         line-height: 1.25em;
