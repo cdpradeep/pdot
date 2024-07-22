@@ -29,6 +29,8 @@ h1, h2, h3 h4, h5, h6{
     --contrast-link-1: #222222;
     --contrast-link-2: #eeeeee;
     --setu: #00A154;
+    --socially: #C4FCEF;
+    --luma: #
  }
  .dark {
     --bg-color: #24262d;
@@ -367,9 +369,9 @@ a.link:hover{
 }
 .pd-portfolio .pd-project-item.socially a{
     background-image:url('../../assets/img/socially.png');
-    background-color:  var(--console) ;
+    background-color:  var(--socially) ;
     background-blend-mode: multiply;
-    color: var(--contrast-link-2);
+    color: var(--contrast-link-1);
     background-position: center;
 }
 .pd-portfolio .pd-project-item.luma a{
@@ -395,6 +397,10 @@ a.link:hover{
 .co-head{
     background-color:var(--console);
     color: var(--contrast-link-2);
+}
+.soc-head{
+    background-color:var(--socially);
+    color: var(--contrast-link-1);
 }
 .oxygen-modal img{
     width: 80%;
