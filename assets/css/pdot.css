@@ -29,8 +29,8 @@ h1, h2, h3 h4, h5, h6{
     --contrast-link-1: #222222;
     --contrast-link-2: #eeeeee;
     --setu: #00A154;
-    --socially: #C4FCEF;
-    --luma: #
+    --socially: #6935DB;
+    --luma: #3B72AB;
  }
  .dark {
     --bg-color: #24262d;
@@ -47,6 +47,8 @@ h1, h2, h3 h4, h5, h6{
     --contrast-link-1: #222222;
     --contrast-link-2: #eeeeee;
     --setu: #00A154;
+    --socially: #6935DB;
+    --luma: #3B72AB;
  }
 .pd-cover{
     /* -webkit-animation: fadein 500ms; /* Safari, Chrome and Opera > 12.1 */
@@ -304,14 +306,14 @@ a.link:hover{
 .pd-interface img{
     height: 30rem;
     animation-name: floating;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin: 1rem 0;
 }
 @keyframes floating {
     from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 20px); }
+    65%  { transform: translate(0, 40px); }
     to   { transform: translate(0, -0px); }    
 }
 
@@ -371,7 +373,7 @@ a.link:hover{
     background-image:url('../../assets/img/socially.png');
     background-color:  var(--socially) ;
     background-blend-mode: multiply;
-    color: var(--contrast-link-1);
+    color: var(--contrast-link-2);
     background-position: center;
 }
 .pd-portfolio .pd-project-item.luma a{
@@ -397,10 +399,6 @@ a.link:hover{
 .co-head{
     background-color:var(--console);
     color: var(--contrast-link-2);
-}
-.soc-head{
-    background-color:var(--socially);
-    color: var(--contrast-link-1);
 }
 .oxygen-modal img{
     width: 80%;
@@ -465,7 +463,6 @@ a.link:hover{
     /* text-align: center; */
     color: var(--color-accent);
 }
-
 .setu-modal{
     color: var(--contrast-link-1);
 }
@@ -476,7 +473,6 @@ a.link:hover{
 .setu-modal img{
     width: 80%;
 }
-
 .setu-modal .modal-header{
     background-color: var(--setu);
 }
@@ -511,6 +507,15 @@ a.link:hover{
     /* text-align: center; */
     color: var(--color-accent);
 }
+.soc-head{
+    background-color:var(--socially);
+    color: var(--contrast-link-2);
+}
+.luma-head{
+    background-color:var(--luma);
+    color: var(--contrast-link-1);
+}
+
 @media screen and (min-width: 768px){
     .navbar .name{
         width: 100%;
