@@ -47,7 +47,7 @@
 <body class="pd-cover dark" id="themeSwitch" data-theme="dark">
     <div class="pd-container container-fluid">
         <nav class="navbar navbar-expand-md pd-header">
-            <a class="navbar-brand" href="/pdot/">
+            <a class="navbar-brand" href="/">
                 <img class="pd-logo" src="assets/img/pdot.svg" alt="pdot logo" title="logo" />
                 <!-- <span class="name">
                     <span>Pradeep Kumar Dhotre</span>   
@@ -71,7 +71,7 @@
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/pdot/#pdPortFolio">Portfolio</a>
+                        <a class="nav-link" href="#pdPortFolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary" href="assets/resume.pdf" target="_blank">Resume</a>
@@ -168,6 +168,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="assets/js/pdot.js"></script>
     <script>
+        $('.setu-btn').on('click',function(){
+            $('.modal-body').load('aarogya-setu.html',function(){
+                $('#theModal').modal({show:true});
+            });
+        });
         $('.oxygen-btn').on('click',function(){
             $('.modal-body').load('oxygen.html',function(){
                 $('#theModal').modal({show:true});
